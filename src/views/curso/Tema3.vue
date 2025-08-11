@@ -1,43 +1,145 @@
 <template lang="pug">
   .curso-main-container.pb-3
-    BannerInterno(:subTitulo="'3. Título tema'")
+    BannerInterno(:subTitulo="'3. Beneficios y desafíos'")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
-  
-      #t_3_1.titulo-segundo(data-aos="flip-up")
-        h2 #[span 3.1] Subtítulo tema
+      
+      // Bloque: texto-iconobloque-imagen
+      .row.mb-5
+        .col-lg-8
+          p(data-aos="fade-left").mb-4 En los últimos años, las metodologías ágiles han emergido como un paradigma dominante en el desarrollo de software, revolucionando la forma en que los equipos gestionan y entregan proyectos. Frente a modelos tradicionales que a menudo presentan una estructura rígida y secuencial, las metodologías ágiles promueven una mayor flexibilidad, colaboración continua y adaptabilidad al cambio. Esto las convierte en una opción atractiva para organizaciones que buscan no solo eficiencia, sino también una respuesta más rápida y efectiva a las demandas del mercado y las expectativas de los clientes.
+          
+          .bg-color-4.p-4(data-aos="fade-left").mb-4
+            .row.align-items-start
+              .col-lg-auto
+                img(src="@/assets/curso/tema3/1.svg", style="max-width: 90px").mx-auto
+              .col-lg
+                p.mb-0 A pesar de los notables beneficios que ofrecen, la adopción de metodologías ágiles, no está exenta de desafíos. Las organizaciones deben estar preparadas para afrontar obstáculos como la resistencia cultural al cambio, la necesidad de equipos con habilidades ágiles, y la gestión de expectativas en entornos complejos y regulados. Este tema explora, tanto los beneficios que las metodologías ágiles aportan a los procesos de desarrollo de software, como los retos que se presentan durante su implementación, ofreciendo una visión crítica y realista de cómo sacar el máximo provecho de estas metodologías.
+          
+          p(data-aos="fade-left") Además, se presentará un caso de éxito, en el que una organización ha logrado implementar con éxito prácticas ágiles, lo que demuestra cómo estos beneficios pueden materializarse en resultados tangibles y cómo los desafíos pueden superarse con una estrategia adecuada.
+        
+        .col-lg-4
+          figure
+            img(src="@/assets/curso/tema3/2.png", data-aos="zoom-in")
 
+      // Bloque: título segundo
+      #t_3_1.titulo-segundo(data-aos="flip-up")
+        h2 #[span 3.1.] Beneficios de las metodologías ágiles
+
+      p(data-aos="fade-left").mb-5 Las metodologías ágiles se han consolidado como una alternativa eficiente frente a los enfoques tradicionales de desarrollo de software, debido a su flexibilidad, orientación al cliente y capacidad de adaptación al cambio. A diferencia del enfoque en cascada, donde se requiere una planificación extensa y rígida desde el inicio, las metodologías ágiles promueven un ciclo iterativo que permite responder rápidamente a nuevas exigencias del mercado y a retroalimentación del cliente. Conozcamos algunos beneficios:
+
+      // Bloque: img-acordeon 4:8
+      .row.align-items-start.mb-5
+        .col-lg-4
+          figure
+            img(src="@/assets/curso/tema3/3.png", alt="").mb-4.mb-lg-0
+        .col-lg-8
+          AcordionA(tipo="b")
+            .div(titulo="Entrega temprana y continua de valor")
+              p.mb-3 Gracias a los sprints o iteraciones, los equipos pueden liberar versiones funcionales del producto, desde etapas tempranas del proyecto. Esto permite a los stakeholders evaluar resultados tangibles y ajustar prioridades de forma constante. Por ejemplo, en un equipo Scrum, al final de cada sprint se entrega un incremento del producto, lo cual reduce la incertidumbre y mejora la satisfacción del cliente.
+            
+            .div(titulo="Colaboración continua entre los miembros del equipo y con el cliente")
+              p.mb-0 Permite una mejor comprensión de los requerimientos y fomenta la cocreación. Esta interacción frecuente contribuye a reducir malentendidos y aumentar la calidad del producto final. La metodología ágil también potencia la motivación y compromiso del equipo, dado que se promueve la autonomía y se valora la contribución individual dentro del proceso colectivo
+            
+            .div(titulo="Capacidad de adaptación al cambio")
+              p.mb-0 Las organizaciones que aplican prácticas ágiles no ven el cambio como una amenaza, sino como una oportunidad para mejorar el producto y alinearse mejor con las necesidades del usuario final. Esto representa una ventaja competitiva significativa, especialmente en entornos volátiles o altamente innovadores.
+            
+            .div(titulo="Mejora continua")
+              p.mb-0 Las prácticas ágiles fomentan una mejora continua a través de reuniones como las retrospectivas, donde el equipo identifica fortalezas, debilidades y oportunidades de mejora. Esta cultura de reflexión y ajuste constante permite aumentar la eficiencia, eliminar cuellos de botella y mantener un ritmo sostenible de trabajo.
+
+      // Bloque: título segundo
+      #t_3_2.titulo-segundo(data-aos="flip-up")
+        h2 #[span 3.2] Retos de las metodologías
+
+      // Bloque: color-texto-imagen
+      .row.mb-5
+        .col-lg-8
+          .bg-color-1.px-4.py-5(data-aos="fade-left").mb-4
+            p.mb-0 A pesar de los múltiples beneficios, la implementación de metodologías ágiles no está exenta de desafíos. Uno de los principales obstáculos es la resistencia al cambio cultural dentro de las organizaciones. Las estructuras jerárquicas tradicionales, pueden entrar en conflicto con los principios ágiles, los cuales promueven equipos auto gestionados y una toma de decisiones más horizontal.
+          
+          p(data-aos="fade-left").mb-4 Asimismo, el éxito de las metodologías ágiles depende, en gran medida, del compromiso del cliente y su participación activa durante el desarrollo. En contextos donde el cliente no puede dedicar tiempo suficiente, se pierde una de las fortalezas claves del enfoque ágil: la colaboración continua y la retroalimentación inmediata.
+          
+          p(data-aos="fade-left") #[strong Conozcamos algunos retos:]
+        
+        .col-lg-4.d-none.d-sm-block
+          figure
+            img(src="@/assets/curso/tema3/4.png", data-aos="zoom-in").mb-4.mb-lg-0
+
+      // Bloque: SlyderA
+      .bg-full-width.bg-fondo-slider.mb-5
+        .p-4.p-md-5
+          SlyderA(tipo="b").bg-white
+            .row.align-items-center.p-4.p-md-5
+              .col-lg-5.order-lg-2
+                figure
+                  img(src="@/assets/curso/tema3/5.png")
+              .col-lg-7.order-lg-1
+                h5 Falta de experiencia del equipo
+                p La falta de experiencia del equipo con prácticas ágiles, también puede afectar la correcta ejecución del proceso. Es común que equipos novatos malinterpreten los principios ágiles, aplicando las ceremonias de forma superficial, sin comprender el propósito detrás de cada una. Esto puede traducirse en entregas desorganizadas, falta de alineación y pérdida de foco en el valor para el cliente.
+            
+            .row.align-items-center.p-4.p-md-5
+              .col-lg-5.order-lg-2
+                figure
+                  img(src="@/assets/curso/tema3/6.png")
+              .col-lg-7.order-lg-1
+                h5 Entornos regulados y contractuales
+                p Por otro lado, en proyectos con requerimientos contractuales estrictos o entornos regulados, puede ser difícil aplicar un enfoque ágil, sin introducir riesgos de cumplimiento. Si bien existen adaptaciones como el enfoque ágil escalado (SAFe), muchas veces se requiere una combinación de prácticas ágiles y tradicionales (modelo híbrido) para lograr un equilibrio.
+            
+            .row.align-items-center.p-4.p-md-5
+              .col-lg-5.order-lg-2
+                figure
+                  img(src="@/assets/curso/tema3/7.png")
+              .col-lg-7.order-lg-1
+                h5 Escasa documentación
+                p Finalmente, otro reto común es la escasa documentación. Aunque el Manifiesto Ágil valora más el software funcionando que la documentación extensiva, en ciertos proyectos (por ejemplo, en el sector financiero o de salud), la documentación sigue siendo un requisito fundamental. No contar con registros adecuados, puede dificultar la trazabilidad y mantenimiento del producto a largo plazo (Monte Galiano, 2016).
+
+      // Bloque: título segundo
+      #t_3_3.titulo-segundo(data-aos="flip-up")
+        h2 #[span 3.3] Caso de éxito: Spotify y su enfoque ágil escalado
+
+      // Bloque: imagen-texto-color
+      .row.mb-5
+        .col-lg-4
+          figure
+            img(src="@/assets/curso/tema3/8.png", data-aos="zoom-in")
+        .col-lg-8
+          p(data-aos="fade-left").mb-4 Un caso paradigmático de éxito en la adopción de metodologías ágiles, es el de Spotify, una empresa que revolucionó no solo el mercado del #[em streaming] musical, sino también la forma en que se gestionan los equipos de desarrollo.
+          
+          p(data-aos="fade-left").mb-4 Spotify adoptó un enfoque ágil escalado basado en la creación de #[em squads], pequeños equipos multifuncionales y autónomos que funcionan como #[em mini-startups]. Cada #[em squad] es responsable de una funcionalidad específica y opera bajo principios ágiles, usando Scrum o Kanban, según su necesidad. Estos squads se agrupan en tribus, que permiten la coordinación entre múltiples equipos, sin perder agilidad.
+          
+          .bg-color-4.p-4(data-aos="fade-left").mb-4
+            p.mb-0 Uno de los elementos más innovadores del modelo Spotify es su enfoque en la autonomía con alineación estratégica. Si bien los equipos tienen libertad para decidir cómo trabajar, todos están alineados con los objetivos generales de la empresa. Además, el uso de roles como chapter leads y guild coordinators, permite compartir buenas prácticas entre squads sin imponer estructuras rígidas.
+          
+          p(data-aos="fade-left") Gracias a esta estructura, Spotify logró escalar el desarrollo de su plataforma global manteniendo una alta velocidad de entrega, mejora continua, innovación constante y satisfacción del usuario. El modelo de Spotify ha inspirado a numerosas empresas tecnológicas, a repensar la manera en que escalan sus procesos ágiles, adaptando el enfoque a sus propias necesidades (Monte Galiano, 2016).
+
+      // Bloque: actividad
       .bg-full-width.border-top.actividad.bg-color-actividad
         .p-4.p-md-5
-          #Actividad                
+          #Actividad
             <Actividad :cuestionario="cuestionario"/>
 
+      // Bloque: material-complementario
       .bg-full-width.border-top.color-primario
         .p-4.p-md-5
           h2(data-aos="fade-left") MATERIAL COMPLEMENTARIO
           .row.material-complementario
             .col-12.col-md-6.col-lg-7
-              p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
-  
+              p Los invitamos a explorar el material complementario que ampliará sus conocimientos sobre metodologías ágiles.
               p.d-flex.my-4
                 img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-                a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/274611" target="_blank" rel="noopener noreferrer") De Castro Emilio Cerdá, F. J. A. L. M. (s/f). Las energías renovables en el ámbito internacional. Revistasice.com. 
-  
+                a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/28569" target="_blank" rel="noopener noreferrer") Clery Aguirre, A. G. (2009). Aplicación y uso del sistema Kanban para lograr la eficiencia operativa de una empresa. El Cid Editor.
               p.d-flex.my-4
-                img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'16px'}")
-                span De Janeiro, R. (1992). La declaración del Río sobre el Medio Ambiente y el Desarrollo. Río de Janeiro República Federativa del Brasil., aprobada en Estocolmo el, 16.
-  
-              p.d-flex.my-4
-                img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
-                a(href="https://youtu.be/QKLjwCMyv3M?si=uAWhO9tnyghljaJg" target="_blank" rel="noopener noreferrer") Innovación y sostenibilidad.
-  
+                img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+                a(href="https://www.youtube.com/watch?v=ccSS4C5GYxs" target="_blank" rel="noopener noreferrer") Mobiliza Academy. (2021). Las mejores metodologías ágiles para el Desarrollo de Software [video]. YouTube.
             .col-12.col-md-6.col-lg-3.offset-lg-1
               figure
                 img(src='@/assets/componentes/material-complementario.svg', alt='')
-  
+
 </template>
 
 <script>
 import Actividad from '@/components/actividad/Actividad.vue'
+import cuestionarios from '@/config/cuestionarios'
+
 export default {
   name: 'Tema3',
   components: {
@@ -45,173 +147,7 @@ export default {
   },
   data() {
     return {
-      cuestionario: {
-        tema: 'Herramientas colaborativas para la construcción de paz',
-        titulo: 'Ponte a prueba',
-        introduccion:
-          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
-        barajarPreguntas: true,
-        preguntas: [
-          {
-            id: 1,
-            texto:
-              '¿Cuál de las siguientes es una característica fundamental de los derechos humanos?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Son temporales y cambiantes',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Son universales y aplican a todas las personas',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Son exclusivos de ciertos grupos',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Son opcionales',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 2,
-            texto:
-              '¿Cuál de las siguientes afirmaciones sobre la diversidad cultural es correcta?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Fomenta la homogeneización cultural',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Promueve el respeto y la aceptación de las diferencias',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Debilita la identidad cultural de los pueblos',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Limita las oportunidades de interacción',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 3,
-            texto:
-              'La mediación en un conflicto tiene como objetivo principal:',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Imponer una solución rápida',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Facilitar el diálogo entre las partes',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Determinar la culpabilidad',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ignorar las preocupaciones de una parte',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 4,
-            texto: 'En un foro comunitario, es importante:',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Escuchar solo a las autoridades',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Fomentar la participación de todos los miembros',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Decidir por votación sin consultar a los demás',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Excluir las opiniones de los más jóvenes',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-          {
-            id: 5,
-            texto:
-              '¿Qué busca la justicia restaurativa en el contexto de un conflicto?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Aplicar una sanción severa',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto: 'Reparar el daño y restablecer las relaciones',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Castigar a las partes involucradas',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ignorar el contexto del conflicto',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-          },
-        ],
-        mensaje_final_aprobado:
-          '¡Felicidades! Has superado la prueba con éxito.',
-        mensaje_final_reprobado:
-          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
-      },
+      cuestionario: cuestionarios.tema3,
     }
   },
   mounted() {
