@@ -322,7 +322,10 @@
                 a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/28993" target="_blank" rel="noopener noreferrer") Escalona, I. (2009). Planeación integral agregada e interrelación de los sistemas intermitentes con el MRP y filosofía JIT, kanban, reingeniería. El Cid Editor.
               p.d-flex.my-4
                 img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-                a(href="https://www.youtube.com/watch?v=UjcAJ3tjg8o" target="_blank" rel="noopener noreferrer") Mujer Cronopio. (2021). AGILE MANIFESTO [1/4]. ¿Solo para ingenieros? ¡NO! [video]. YouTube.
+                a(href="https://www.youtube.com/watch?v=PHHI1k1klAE" target="_blank" rel="noopener noreferrer") Thetips4you. (2022). Agile Manifesto | Agile Principles Explained | 4 Agile Values & 12 Agile Principles [Video]. YouTube. 
+              p.d-flex.my-4
+                img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+                a(href="https://www.youtube.com/watch?v=0jdLSTmktn4" target="_blank" rel="noopener noreferrer") BSG Institute. (2020). Principios y valores del Manifiesto Ágil [Video]. YouTube. 
             .col-12.col-md-6.col-lg-3.offset-lg-1
               figure
                 img(src='@/assets/componentes/material-complementario.svg', alt='')
